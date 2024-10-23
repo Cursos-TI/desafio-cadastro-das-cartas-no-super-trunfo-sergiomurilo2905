@@ -6,16 +6,40 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    printf ("DESAFIO SUPER TRUNFO - CADASTRO DE CARTAS\n");
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    char CODIGO [4];
+    char NOME_DA_CIDADE[50];
+    int POPULACAO;
+    float AREA;
+    int PIB;
+    int PONTOS_TURSTICOS;
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf (" QUAL O CODIGO DA CIDADE\n"); // EXEMPLO: A01, A02, A03, B01, ETC...
+    scanf ("%s", &CODIGO);
+
+    printf (" QUAL O NOME DA CIDADE QUE VC VAI JOGAR\n");
+    scanf ("%s", &NOME_DA_CIDADE);
+
+    printf (" QUAL A POPULACAO DA CIDADE \n");
+    scanf ("%d", &POPULACAO);
+    
+    printf (" QUAL A AREA DA CIDADE (EM KM)\n");
+    scanf ("%f", &AREA);
+
+    printf (" QUAL O PIB DA CIDADE (EM MILHOES)\n");
+    scanf ("%d", &PIB);
+
+    printf (" QUANTOS PONTOS TURISTICOS TEM SUA CIDADE\n");
+    scanf ("%d", &PONTOS_TURSTICOS);
+
+    printf ("CODIGO DA CIDADE: %s\n", CODIGO);
+    printf ("NOME DA CIDADE: %s\n", NOME_DA_CIDADE);
+    printf ("POPULACAO DA CIDADE: %d\n", POPULACAO);
+    printf ("AREA TOTAL DA CIDADE: %f\n", AREA);
+    printf ("PIB (EM MILHOES): %d \n", PIB);
+    printf ("PONTOS TURISTICOS: %d\n", PONTOS_TURSTICOS);
 
     return 0;
 }
